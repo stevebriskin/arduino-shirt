@@ -47,7 +47,7 @@ void setupWazePic() {
 void loopWazePic(CRGB* leds, int num) {
   unsigned long now = millis();
 
-  if (lastchange == 0 || now - lastchange > 3000ul) {
+  if (lastchange == 0 || now - lastchange > 2000ul) {
     pic = abs(pic - 1);
     lastchange = now;
   }
